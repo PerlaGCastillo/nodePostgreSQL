@@ -1,4 +1,5 @@
-import {Router} from "express";
+import {Router} from "express"
+import {pool} from '../db.js'
 
 const router = Router()
 
@@ -20,7 +21,7 @@ router.delete('/users/:id', (req, res)=>{
 })
 
 router.get('/users', (req, res)=>{
-    res.send('obteniendo usuarios')
+    res.send('actualizando usuarios')
 })
 
 export default router
